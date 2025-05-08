@@ -45,8 +45,8 @@ The platform consists of several key components:
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/hardikkgupta/llm-inference-platform.git
-cd llm-inference-platform
+git clone https://github.com/hardikkgupta/distributed-inference.git
+cd distributed-inference
 ```
 
 2. Install dependencies:
@@ -99,4 +99,4 @@ We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) f
 
 ## License
 
-MIT License - see [LICENSE](LICENSE) for details. 
+MIT License - see [LICENSE](LICENSE) for details.

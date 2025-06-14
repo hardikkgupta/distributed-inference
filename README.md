@@ -1,4 +1,4 @@
-# Distributed Inference Platform — v2
+# Distributed Inference Platform
 
 A **minimal, reproducible** distributed‑LLM serving stack that focuses on *one thing*: **low‑latency generation at scale** using [Ray Serve] and [vLLM].
 

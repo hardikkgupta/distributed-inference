@@ -1,0 +1,35 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: rayserve-llm
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: rayserve-llm
+  template:
+    metadata:
+      labels:
+        app: rayserve-llm
+    spec:
+      containers:
+        - name: rayserve
+          image: your-docker-registry/distributed-inference:latest
+          ports:
+            - containerPort: 8000
+          resources:
+            limits:
+              nvidia.com/gpu: 1
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: rayserve-llm
+spec:
+  selector:
+    app: rayserve-llm
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 8000
+  type: LoadBalancer

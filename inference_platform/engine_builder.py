@@ -5,7 +5,6 @@ Uses nvidia tensorrt_llm python API. Requires GPUs with sufficient VRAM.
 Example:
     python -m inference_platform.engine_builder --model meta-llama/Llama-3-8b-instruct --precision fp8
 """
-
 import argparse
 from tensorrt_llm import Builder
 

@@ -17,7 +17,6 @@ curl -X POST localhost:8000/generate -d '{"prompt":"Hello"}'
 ```
 
 See `docs/README.md` for multi‑GPU and Kubernetes guides.
-
 ## Repository layout
 
 ```

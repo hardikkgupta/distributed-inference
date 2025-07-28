@@ -5,7 +5,7 @@ import ray
 from ray import serve
 from ray.serve.llm import LLMServer
 
-def create_app(model_name: str, gpu_per_replica: float = 1) -> serve.Deployment:
+def create_app(model_name: str, gpu_per_replica: float = 2) -> serve.Deployment:
     llm_server = LLMServer.bind(model_name=model_name)
 
     @serve.deployment(

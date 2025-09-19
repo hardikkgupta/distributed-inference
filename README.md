@@ -3,10 +3,10 @@
 A **minimal, reproducible** distributed‑LLM serving stack that focuses on *one thing*: **low‑latency generation at scale** using [Ray Serve] and [vLLM].
 
 
-* **Ray Serve deployment graphs** for request routing.
-* `scripts/build_trt_engine.py` stub that really builds engines with TensorRT‑LLM.
-* Simplified Dockerfile and `requirements.txt`.
-* Added Prometheus + Grafana example configs for observability.
+* **Ray Serve deployment graphs** for request routing
+* `scripts/build_trt_engine.py` stub that really builds engines with TensorRT‑LLM
+* Simplified Dockerfile and `requirements.txt`
+* Added Prometheus + Grafana example configs for observability
 
 ## Quick start (single node, 1 GPU)
 
@@ -16,7 +16,7 @@ python -m inference_platform.serve --model meta-llama/Llama-3-8b-instruct
 curl -X POST localhost:8000/generate -d '{"prompt":"Hello"}'
 ```
 
-See `docs/README.md` for multi‑GPU and Kubernetes guides.
+See `docs/README.md` for multi‑GPU and Kubernetes guides
 ## Repository layout
 
 ```
